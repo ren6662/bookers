@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Bookers</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>WebCampBackendNew</title>
+    
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="kqJZL5FNVXIF/goadQ7Z7jswJ+Hdtxuy7A8Uzg13U1NtQ4/DzqNTp4zDk6QZHiIdUlrvRdDu5yBib6Ryr/X5lw==" />
+
+    <link rel="stylesheet" media="all" href="/assets/application-d12397cbc3a266ce5a99f7b588223090c55ca04a439953bb5f9304395de93fc3.css" data-turbolinks-track="reload" />
+    <script src="/assets/application-114264dd93c8ff30e4335b71eed7949d66c4e7a8eb62e2de6284c046fe07104b.js" data-turbolinks-track="reload"></script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +16,9 @@
   </head>
 
   <body>
+    <div class="text-success">
+  　<%= flash[:notice] %>
+　　</div>
     <%= yield %>
   </body>
 </html>
